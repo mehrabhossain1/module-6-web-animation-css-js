@@ -4,6 +4,7 @@ function App() {
   return (
     <div className="main">
       <div className="box-1"></div>
+      <h1>Hellow</h1>
     </div>
   );
 }
