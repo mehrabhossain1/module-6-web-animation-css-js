@@ -1,12 +1,13 @@
 import './App.css';
-import BoxAnimation from './components/box-animation/BoxAnimation';
+import LoadingAnimation from './components/loading-animation/LoadingAnimation';
 
 function App() {
   return (
-    <div className="main">
+    <>
       {/* <Button /> */}
-      <BoxAnimation />
-    </div>
+      {/* <BoxAnimation /> */}
+      <LoadingAnimation />
+    </>
   );
 }
 

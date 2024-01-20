@@ -1,9 +1,13 @@
-import '.LoadingAnimation.css/';
+import './LoadingAnimation.css';
 
 const LoadingAnimation = () => {
   return (
-    <div>
-      <h1>This is LoadingAnimation component</h1>
+    <div className="main">
+      <div className="loading">
+        <div className="glass">
+          <div className="box"></div>
+        </div>
+      </div>
     </div>
   );
 };
