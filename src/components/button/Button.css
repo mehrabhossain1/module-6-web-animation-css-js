@@ -1,0 +1,32 @@
+.btn {
+  border: 2px solid tomato;
+  border-radius: 2px;
+  color: tomato;
+  padding: 10px 20px;
+  background-color: transparent;
+  transition-duration: 500ms;
+  transition-timing-function: ease;
+  position: relative;
+  overflow: hidden;
+}
+.btn::after {
+  content: '';
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition-property: all;
+  transition-duration: 500ms;
+  transition-timing-function: ease;
+  transform: scaleX(0);
+  z-index: -1;
+}
+.btn:hover {
+  color: white;
+}
+.btn:hover:after {
+  transform: scaleX(1);
+  background-color: tomato;
+}
